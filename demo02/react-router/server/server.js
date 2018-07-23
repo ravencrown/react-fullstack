@@ -27,16 +27,16 @@ const User = mongoose.model('user', new mongoose.Schema({
 }));
 
 // 新增
-// User.create({
-//     user: 'chengx1',
-//     age: 22
-// }, function(err, doc) {
-//     if (!err) {
-//         console.log(doc);
-//     } else {
-//         console.log(err);
-//     }
-// })
+User.create({
+    user: 'chengx',
+    age: 26
+}, function(err, doc) {
+    if (!err) {
+        console.log(doc);
+    } else {
+        console.log(err);
+    }
+})
 
 // 删除
 // User.remove({
@@ -65,7 +65,7 @@ app.get('/', function(req, res) {
 
 app.get('/data', function(req, res) {
     User.findOne({
-        user: "xiaoming"
+        user: "chengx"
     }, function(err, doc) {
         res.json(doc);
     })

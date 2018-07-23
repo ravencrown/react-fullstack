@@ -5,7 +5,7 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import {
     BrowserRouter, 
-    Route, 
+    Route,
     Redirect,
     Switch
 } from 'react-router-dom';
